@@ -1,0 +1,7 @@
+C:\Users\van.nguyenminh\Documents\van.nguyen\SwaggerAPISample\SwaggerAPISample\SwaggerAPISample\obj\Debug\net5.0\SwaggerAPISample.csprojAssemblyReference.cache
+C:\Users\van.nguyenminh\Documents\van.nguyen\SwaggerAPISample\SwaggerAPISample\SwaggerAPISample\obj\Debug\net5.0\SwaggerAPISample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\van.nguyenminh\Documents\van.nguyen\SwaggerAPISample\SwaggerAPISample\SwaggerAPISample\obj\Debug\net5.0\SwaggerAPISample.AssemblyInfoInputs.cache
+C:\Users\van.nguyenminh\Documents\van.nguyen\SwaggerAPISample\SwaggerAPISample\SwaggerAPISample\obj\Debug\net5.0\SwaggerAPISample.AssemblyInfo.cs
+C:\Users\van.nguyenminh\Documents\van.nguyen\SwaggerAPISample\SwaggerAPISample\SwaggerAPISample\obj\Debug\net5.0\SwaggerAPISample.csproj.CoreCompileInputs.cache
+C:\Users\van.nguyenminh\Documents\van.nguyen\SwaggerAPISample\SwaggerAPISample\SwaggerAPISample\obj\Debug\net5.0\SwaggerAPISample.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\van.nguyenminh\Documents\van.nguyen\SwaggerAPISample\SwaggerAPISample\SwaggerAPISample\obj\Debug\net5.0\SwaggerAPISample.MvcApplicationPartsAssemblyInfo.cache
