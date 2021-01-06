@@ -1,4 +1,3 @@
-using IdentityServer4;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -53,6 +52,8 @@ namespace Client.MVC
                     options.SaveTokens = true;
 
                     options.Scope.Add("profile");
+                    options.Scope.Add("Api.One");
+                    options.Scope.Add("offline_access");
                     options.GetClaimsFromUserInfoEndpoint = true;
                 });
         }

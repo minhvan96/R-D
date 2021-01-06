@@ -4,7 +4,6 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 using System;
-using System.IO;
 
 namespace IdentityServer
 {

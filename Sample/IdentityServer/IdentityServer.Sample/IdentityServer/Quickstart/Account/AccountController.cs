@@ -124,7 +124,7 @@ namespace IdentityServer.Quickstart.UI
                             IsPersistent = true,
                             ExpiresUtc = DateTimeOffset.UtcNow.Add(AccountOptions.RememberMeLoginDuration)
                         };
-                    };
+                    }
 
                     // issue authentication cookie with subject ID and username
                     var isuser = new IdentityServerUser(user.SubjectId)
@@ -181,7 +181,7 @@ namespace IdentityServer.Quickstart.UI
             // build a model so the logout page knows what to display
             var vm = await BuildLogoutViewModelAsync(logoutId);
 
-            if (vm.ShowLogoutPrompt == false)
+            if (!vm.ShowLogoutPrompt)
             {
                 // if the request for logout was properly authenticated from IdentityServer, then
                 // we don't need to show the prompt and can just log the user out directly.
