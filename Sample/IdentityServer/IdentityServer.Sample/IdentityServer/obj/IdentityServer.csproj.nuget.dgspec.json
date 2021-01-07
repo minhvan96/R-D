@@ -4,6 +4,85 @@
     "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer\\IdentityServer.csproj": {}
   },
   "projects": {
+    "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer.Investigate.LDAP\\IdentityServer.Investigate.LDAP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer.Investigate.LDAP\\IdentityServer.Investigate.LDAP.csproj",
+        "projectName": "IdentityServer.Investigate.LDAP",
+        "projectPath": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer.Investigate.LDAP\\IdentityServer.Investigate.LDAP.csproj",
+        "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
+        "outputPath": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer.Investigate.LDAP\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "IdentityModel": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Novell.Directory.Ldap.NETStandard": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.1.30, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer\\IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +106,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer.Investigate.LDAP\\IdentityServer.Investigate.LDAP.csproj": {
+                "projectPath": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer.Investigate.LDAP\\IdentityServer.Investigate.LDAP.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

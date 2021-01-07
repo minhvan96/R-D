@@ -1,4 +1,5 @@
 using IdentityServer.Config;
+using IdentityServer.Investigate.LDAP;
 using IdentityServer4;
 using IdentityServer4.Configuration;
 using IdentityServer4.EntityFramework.DbContexts;
@@ -63,7 +64,8 @@ namespace IdentityServer
             {
                 options.ConfigureDbContext = b => b.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationsAssembly));
                 options.EnableTokenCleanup = true;
-            });
+            })
+            .CustomAddLdapUsers<ActiveDirectoryAppUser>(Configuration.GetSection("IdentityServerLdap"), UserStore.InMemory);
 
             builder.AddDeveloperSigningCredential();
 

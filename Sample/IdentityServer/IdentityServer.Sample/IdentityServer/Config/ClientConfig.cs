@@ -47,6 +47,23 @@ namespace IdentityServer.Config
                         IdentityServerConstants.StandardScopes.Profile,
                         "Api.One"
                     }
+                },
+                new Client
+                {
+                    ClientId = "client_ldap",
+
+                    ClientSecrets= {new Secret ("client_ldap_secret".Sha256()) },
+
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+
+                    AllowOfflineAccess = true,
+
+                    AllowedScopes =new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "Api.One"
+                    }
                 }
          };
     }
