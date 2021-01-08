@@ -1,8 +1,12 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace Client.MVC
@@ -24,38 +28,66 @@ namespace Client.MVC
 
             services.AddAuthentication(options =>
             {
-                options.DefaultScheme = "Cookies";
-
-                // When we need user to login, we will be using the OpenID Connect Protocols
-                options.DefaultChallengeScheme = "oidc";
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+                options.DefaultSignOutScheme = OpenIdConnectDefaults.AuthenticationScheme;
             })
-                .AddCookie("Cookies") // Add Handler that can process cookies
-                .AddOpenIdConnect("oidc", options =>
+            .AddCookie()
+            .AddOpenIdConnect(options =>
+            {
+                options.SignInScheme = "Cookies";
+                options.SignOutScheme = "OpenIdConnect";
+                options.Authority = "https://localhost:44364";
+                options.RequireHttpsMetadata = true;
+                options.ClientId = "hybridclient";
+                options.ClientSecret = "hybrid_flow_secret";
+                options.ResponseType = "code id_token";
+                options.Scope.Add("scope_used_for_hybrid_flow");
+                options.Scope.Add("profile");
+                options.Scope.Add("offline_access");
+                options.GetClaimsFromUserInfoEndpoint = true;
+                options.ClaimActions.MapAll();
+                options.SaveTokens = true;
+                // Set the correct name claim type
+                options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    // where the trusted token service is located (Identity Server)
-                    options.Authority = "https://localhost:5001";
+                    NameClaimType = "name"
+                };
+            });
+            //services.AddAuthentication(options =>
+            //{
+            //    options.DefaultScheme = "Cookies";
 
-                    options.ClientId = "client_mvc";
-                    options.ClientSecret = "client_mvc_secret";
+            //    // When we need user to login, we will be using the OpenID Connect Protocols
+            //    options.DefaultChallengeScheme = "oidc";
+            //})
+            //    .AddCookie("Cookies") // Add Handler that can process cookies
+            //    .AddOpenIdConnect("oidc", options =>
+            //    {
+            //        // where the trusted token service is located (Identity Server)
+            //        options.Authority = "https://localhost:44364";
 
-                    // Authorization flow type
-                    // ResponseType value:
-                    // code: Authorization Code Flow
-                    // id_token: Implicit Flow
-                    // id_token token: Implicit Flow
-                    // code id_token: Hybrid Flow
-                    // code token: Hybrid Flow
-                    // code id_token token: Hybrid Flow
-                    options.ResponseType = "code";
+            //        options.ClientId = "client_mvc";
+            //        options.ClientSecret = "client_mvc_secret";
 
-                    // Persist the Tokens from Identity Server in the Cookie (As they will be needed later)
-                    options.SaveTokens = true;
+            //        // Authorization flow type
+            //        // ResponseType value:
+            //        // code: Authorization Code Flow
+            //        // id_token: Implicit Flow
+            //        // id_token token: Implicit Flow
+            //        // code id_token: Hybrid Flow
+            //        // code token: Hybrid Flow
+            //        // code id_token token: Hybrid Flow
+            //        options.ResponseType = "code";
 
-                    options.Scope.Add("profile");
-                    options.Scope.Add("Api.One");
-                    options.Scope.Add("offline_access");
-                    options.GetClaimsFromUserInfoEndpoint = true;
-                });
+            //        // Persist the Tokens from Identity Server in the Cookie (As they will be needed later)
+            //        options.SaveTokens = true;
+
+            //        options.Scope.Add("profile");
+            //        options.Scope.Add("Api.One");
+            //        options.Scope.Add("offline_access");
+            //        options.GetClaimsFromUserInfoEndpoint = true;
+            //    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

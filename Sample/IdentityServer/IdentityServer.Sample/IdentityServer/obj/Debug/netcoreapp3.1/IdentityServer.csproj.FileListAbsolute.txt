@@ -113,5 +113,4 @@ E:\R&D\Sample\IdentityServer\IdentityServer.Sample\IdentityServer\bin\Debug\netc
 E:\R&D\Sample\IdentityServer\IdentityServer.Sample\IdentityServer\obj\Debug\netcoreapp3.1\IdentityServer.Views.pdb
 E:\R&D\Sample\IdentityServer\IdentityServer.Sample\IdentityServer\obj\Debug\netcoreapp3.1\IdentityServer.csproj.CopyComplete
 E:\R&D\Sample\IdentityServer\IdentityServer.Sample\IdentityServer\obj\Debug\netcoreapp3.1\IdentityServer.genruntimeconfig.cache
-E:\R&D\Sample\IdentityServer\IdentityServer.Sample\IdentityServer\bin\Debug\netcoreapp3.1\IdentityServer.Investigate.LDAP.dll
-E:\R&D\Sample\IdentityServer\IdentityServer.Sample\IdentityServer\bin\Debug\netcoreapp3.1\IdentityServer.Investigate.LDAP.pdb
+E:\R&D\Sample\IdentityServer\IdentityServer.Sample\IdentityServer\obj\Debug\netcoreapp3.1\Razor\Views\Ldap\Login.cshtml.g.cs
