@@ -65,6 +65,7 @@ namespace IdentityServerHost.Quickstart.UI
             {
                 // we only have one option for logging in and it's an external provider
                 return await ExternalLogin(vm.ExternalLoginScheme, returnUrl);
+                //return RedirectToAction("Challenge", "External", new { externalLoginScheme = vm.ExternalLoginScheme, returnUrl });
             }
 
             return View(vm);
