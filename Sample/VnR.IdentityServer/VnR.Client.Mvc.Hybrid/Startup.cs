@@ -23,7 +23,7 @@ namespace VnR.Client.Mvc.Hybrid
 
         public IConfiguration Configuration { get; }
 
-        private readonly string identityServerUrl = "https://localhost:7001";
+        private readonly string identityServerUrl = "https://localhost:44364";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -48,10 +48,10 @@ namespace VnR.Client.Mvc.Hybrid
                 options.SignOutScheme = "OpenIdConnect";
                 options.Authority = identityServerUrl;
                 options.RequireHttpsMetadata = true;
-                options.ClientId = "hybridclient";
-                options.ClientSecret = "hybrid_flow_secret";
+                options.ClientId = "vnr_client_mvc_hybrid_client";
+                options.ClientSecret = "vnr_client_mvc_hybrid_client_secret";
                 options.ResponseType = "code id_token";
-                options.Scope.Add("scope_used_for_hybrid_flow");
+                options.Scope.Add("vrn_client_mvc_hybrid_scope");
                 options.Scope.Add("profile");
                 options.Scope.Add("offline_access");
                 options.GetClaimsFromUserInfoEndpoint = true;
