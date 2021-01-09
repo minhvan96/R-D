@@ -1,62 +1,64 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-Host-12ED8ECC-9EF1-4D31-87B4-1405B3198E5E</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UserSecretsId>aspnet-Host-12ED8ECC-9EF1-4D31-87B4-1405B3198E5E</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="5.0.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="Remotion.Linq" Version="2.2.0" />
-    <PackageReference Include="IdentityServer4" Version="4.1.1" />
-    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1" PrivateAssets="all">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
-    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
-    <PackageReference Include="Serilog.Sinks.Seq" Version="4.0.0" />
-    <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
-    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
-    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="5.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="Remotion.Linq" Version="2.2.0" />
+		<PackageReference Include="IdentityServer4" Version="4.1.1" />
+		<PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.10" />
 
-  <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
-  </ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1" PrivateAssets="all">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.Seq" Version="4.0.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+		<PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="Views\Account\AccessDenied.cshtml" />
-    <None Include="Views\Account\LoggedOut.cshtml" />
-    <None Include="Views\Account\Login.cshtml" />
-    <None Include="Views\Account\Logout.cshtml" />
-    <None Include="Views\Consent\Index.cshtml" />
-    <None Include="Views\Device\Success.cshtml" />
-    <None Include="Views\Device\UserCodeCapture.cshtml" />
-    <None Include="Views\Device\UserCodeConfirmation.cshtml" />
-    <None Include="Views\Diagnostics\Index.cshtml" />
-    <None Include="Views\Grants\Index.cshtml" />
-    <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Shared\Error.cshtml" />
-    <None Include="Views\Shared\Redirect.cshtml" />
-    <None Include="Views\Shared\_Layout.cshtml" />
-    <None Include="Views\Shared\_Nav.cshtml" />
-    <None Include="Views\Shared\_ScopeListItem.cshtml" />
-    <None Include="Views\Shared\_ValidationSummary.cshtml" />
-    <None Include="Views\_ViewImports.cshtml" />
-    <None Include="Views\_ViewStart.cshtml" />
-    <None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-brands-400.svg" />
-    <None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-brands-400.woff2" />
-    <None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-regular-400.svg" />
-    <None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-regular-400.woff2" />
-    <None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-solid-900.svg" />
-    <None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-solid-900.woff2" />
-    <None Include="wwwroot\js\qrcode.min.js" />
-    <None Include="wwwroot\js\site.js" />
-    <None Include="wwwroot\js\site.min.js" />
-  </ItemGroup>
+	<ItemGroup>
+		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Views\Account\AccessDenied.cshtml" />
+		<None Include="Views\Account\LoggedOut.cshtml" />
+		<None Include="Views\Account\Login.cshtml" />
+		<None Include="Views\Account\Logout.cshtml" />
+		<None Include="Views\Consent\Index.cshtml" />
+		<None Include="Views\Device\Success.cshtml" />
+		<None Include="Views\Device\UserCodeCapture.cshtml" />
+		<None Include="Views\Device\UserCodeConfirmation.cshtml" />
+		<None Include="Views\Diagnostics\Index.cshtml" />
+		<None Include="Views\Grants\Index.cshtml" />
+		<None Include="Views\Home\Index.cshtml" />
+		<None Include="Views\Shared\Error.cshtml" />
+		<None Include="Views\Shared\Redirect.cshtml" />
+		<None Include="Views\Shared\_Layout.cshtml" />
+		<None Include="Views\Shared\_Nav.cshtml" />
+		<None Include="Views\Shared\_ScopeListItem.cshtml" />
+		<None Include="Views\Shared\_ValidationSummary.cshtml" />
+		<None Include="Views\_ViewImports.cshtml" />
+		<None Include="Views\_ViewStart.cshtml" />
+		<None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-brands-400.svg" />
+		<None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-brands-400.woff2" />
+		<None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-regular-400.svg" />
+		<None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-regular-400.woff2" />
+		<None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-solid-900.svg" />
+		<None Include="wwwroot\css\fontawesome-free-5.4.1-web\webfonts\fa-solid-900.woff2" />
+		<None Include="wwwroot\js\qrcode.min.js" />
+		<None Include="wwwroot\js\site.js" />
+		<None Include="wwwroot\js\site.min.js" />
+	</ItemGroup>
 </Project>
