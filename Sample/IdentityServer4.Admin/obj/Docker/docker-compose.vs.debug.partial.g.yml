@@ -1,0 +1,82 @@
+version: '3.4'
+
+services:
+  identityserver4.admin.admin:
+    image: skoruba-identityserver4-admin:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "IdentityServer4.Admin.Admin"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_identityserver4.admin.admin$
+    volumes:
+      - E:\R&D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.Admin:/app
+      - E:\R&D\Sample\IdentityServer4.Admin:/src
+      - C:\Users\van.nguyenminh\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_identityserver4.admin.admin$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_identityserver4.admin.admin$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  identityserver4.admin.admin.api:
+    image: skoruba-identityserver4-admin-api:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "IdentityServer4.Admin.Admin.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_identityserver4.admin.admin.api$
+    volumes:
+      - E:\R&D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.Admin.Api:/app
+      - E:\R&D\Sample\IdentityServer4.Admin:/src
+      - C:\Users\van.nguyenminh\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_identityserver4.admin.admin.api$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_identityserver4.admin.admin.api$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  identityserver4.admin.sts.identity:
+    image: skoruba-identityserver4-sts-identity:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "IdentityServer4.Admin.STS.Identity"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_identityserver4.admin.sts.identity$
+    volumes:
+      - E:\R&D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.STS.Identity:/app
+      - E:\R&D\Sample\IdentityServer4.Admin:/src
+      - C:\Users\van.nguyenminh\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_identityserver4.admin.sts.identity$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_identityserver4.admin.sts.identity$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

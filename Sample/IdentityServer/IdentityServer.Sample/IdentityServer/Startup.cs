@@ -1,4 +1,6 @@
 using IdentityServer.Config;
+using IdentityServer.Data;
+using IdentityServer.Data.Entities;
 using IdentityServer.Data.TestData;
 using IdentityServer.LdapExtension.Extensions;
 using IdentityServer.LdapExtension.UserModel;
@@ -7,6 +9,7 @@ using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,13 +32,29 @@ namespace IdentityServer
         {
             services.AddControllersWithViews();
 
+            services.AddDbContext<ApplicationIdentityDbContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("SQLite")));
+
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationIdentityDbContext>()
+                .AddDefaultTokenProviders();
+
+            services.Configure<IISOptions>(iis =>
+            {
+                iis.AuthenticationDisplayName = "Windows";
+                iis.AutomaticAuthentication = true;
+            });
+
             //InMemory
             var builder = services.AddIdentityServer()
-                .AddInMemoryIdentityResources(Config.IdentityResourceConfig.IdentityResources)
-                .AddInMemoryApiScopes(Config.ApiScopeConfig.ApiScopes)
-                .AddInMemoryClients(Config.ClientConfig.Clients)
-                .AddLdapUsers<OpenLdapAppUser>(Configuration.GetSection("IdentityServerLdap"), UserStore.InMemory)
+                .AddInMemoryApiResources(ApiResourceConfig.ApiResources)
+                .AddInMemoryIdentityResources(IdentityResourceConfig.IdentityResources)
+                .AddInMemoryApiScopes(ApiScopeConfig.ApiScopes)
+                .AddInMemoryClients(ClientConfig.Clients)
+                //.AddLdapUsers<OpenLdapAppUser>(Configuration.GetSection("IdentityServerLdap"), UserStore.InMemory)
                 .AddTestUsers(TestUsers.Users);
+
+            #region Use later
 
             //string connectionString = Configuration.GetConnectionString("DefaultConnection");
             //var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
@@ -64,12 +83,9 @@ namespace IdentityServer
             //    options.EnableTokenCleanup = true;
             //});
 
+            #endregion Use later
+
             builder.AddDeveloperSigningCredential();
-            services.Configure<IISOptions>(iis =>
-            {
-                iis.AuthenticationDisplayName = "Windows";
-                iis.AutomaticAuthentication = true;
-            });
 
             services.AddAuthentication()
                 .AddGoogle("Google", options =>

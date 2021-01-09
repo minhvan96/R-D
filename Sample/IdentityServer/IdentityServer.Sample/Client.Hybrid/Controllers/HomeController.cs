@@ -1,27 +1,34 @@
 ﻿using Client.Hybrid.Models;
+using IdentityServerAuthorizationService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Client.Hybrid.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private IAppAuthorizationService _appAuthorizationService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IAppAuthorizationService appAuthorizationService)
         {
-            _logger = logger;
+            _appAuthorizationService = appAuthorizationService;
         }
 
         public IActionResult Index()
         {
+            //Windows or local => claim http://schemas.microsoft.com/identity/claims/identityprovider
+            var claimIdentityprovider = User.Claims.FirstOrDefault(t => t.Type == "http://schemas.microsoft.com/identity/claims/identityprovider");
+
+            if (claimIdentityprovider != null && _appAuthorizationService.IsAdmin(User.Identity.Name, claimIdentityprovider.Value))
+            {
+                // yes, this is an admin
+                Console.WriteLine("This is an admin, we can do some specific admin logic!");
+            }
+
             return View();
         }
 
@@ -34,6 +41,11 @@ namespace Client.Hybrid.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Logout()
+        {
+            return new SignOutResult(new[] { "Cookies", "OpenIdConnect" });
         }
     }
 }

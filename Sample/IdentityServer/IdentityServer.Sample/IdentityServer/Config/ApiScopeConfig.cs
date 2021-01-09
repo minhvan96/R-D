@@ -15,7 +15,10 @@ namespace IdentityServer.Config
 
                 // Policy Server
                 new ApiScope("policyserver.runtime"),
-                new ApiScope("policyserver.management")
+                new ApiScope("policyserver.management"),
+
+               // Hybrid flow API Scope
+               new ApiScope("client_hybrid_flow_api_scope", "Scope for the client_hybrid_flow_api_scope")
            };
     }
 }

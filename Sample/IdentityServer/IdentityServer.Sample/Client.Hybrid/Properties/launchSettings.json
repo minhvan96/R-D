@@ -12,6 +12,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
+        "ASPNETCORE_HTTPS_PORT": "44307",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },

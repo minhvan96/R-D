@@ -64,7 +64,23 @@ namespace IdentityServer.Config
                         IdentityServerConstants.StandardScopes.Profile,
                         "Api.One"
                     }
-                }
+                },
+                new Client
+                {
+                    ClientId = "client_hyrbrid_flow",
+                    ClientName = "Hybrid MVC Client",
+
+                    AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
+                    ClientSecrets = { new Secret("client_hybrid_flow_secret".Sha256()) },
+                    RequirePkce = false,
+                    RedirectUris = { "https://localhost:44307/signin-oidc" },
+                    FrontChannelLogoutUri = "https://localhost:44307/signout-oidc",
+                    PostLogoutRedirectUris = { "https://localhost:44307/signout-callback-oidc" },
+
+                    AllowOfflineAccess = true,
+                    //AlwaysIncludeUserClaimsInIdToken = true,
+                    AllowedScopes = { "openid", "profile", "offline_access",  "scope_used_for_hybrid_flow" }
+                },
          };
     }
 }

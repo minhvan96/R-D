@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.LDap", "Client.LDap\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.Hybrid", "Client.Hybrid\Client.Hybrid.csproj", "{003C0288-A150-4F95-A21C-A0F82D155990}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerAuthorizationService", "IdentityServerAuthorizationService\IdentityServerAuthorizationService.csproj", "{8F0143FC-2BA1-4BF4-ACD3-48A5D1C6D14A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.MVC.Hybrid", "Client.MVC.Hybrid\Client.MVC.Hybrid.csproj", "{3C66A4CD-0A65-4D1F-B62B-161642B03568}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{003C0288-A150-4F95-A21C-A0F82D155990}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{003C0288-A150-4F95-A21C-A0F82D155990}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{003C0288-A150-4F95-A21C-A0F82D155990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F0143FC-2BA1-4BF4-ACD3-48A5D1C6D14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0143FC-2BA1-4BF4-ACD3-48A5D1C6D14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0143FC-2BA1-4BF4-ACD3-48A5D1C6D14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0143FC-2BA1-4BF4-ACD3-48A5D1C6D14A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C66A4CD-0A65-4D1F-B62B-161642B03568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C66A4CD-0A65-4D1F-B62B-161642B03568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C66A4CD-0A65-4D1F-B62B-161642B03568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C66A4CD-0A65-4D1F-B62B-161642B03568}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
