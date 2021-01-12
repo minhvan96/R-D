@@ -6834,11 +6834,11 @@
   "project": {
     "version": "2.0.0-beta1",
     "restore": {
-      "projectUniqueName": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj",
+      "projectUniqueName": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj",
       "projectName": "IdentityServer4.Admin.Admin.EntityFramework.MySql",
-      "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj",
+      "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj",
       "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
-      "outputPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\obj\\",
+      "outputPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6855,8 +6855,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {
-              "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj"
+            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {
+              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj"
             }
           }
         }

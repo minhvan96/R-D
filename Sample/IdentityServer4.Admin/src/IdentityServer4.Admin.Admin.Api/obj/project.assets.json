@@ -11087,11 +11087,11 @@
   "project": {
     "version": "2.0.0-beta1",
     "restore": {
-      "projectUniqueName": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.Api\\IdentityServer4.Admin.Admin.Api.csproj",
+      "projectUniqueName": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.Api\\IdentityServer4.Admin.Admin.Api.csproj",
       "projectName": "IdentityServer4.Admin.Admin.Api",
-      "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.Api\\IdentityServer4.Admin.Admin.Api.csproj",
+      "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.Api\\IdentityServer4.Admin.Admin.Api.csproj",
       "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
-      "outputPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.Api\\obj\\",
+      "outputPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11108,20 +11108,20 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj": {
-              "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj"
+            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj": {
+              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj"
             },
-            "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL.csproj": {
-              "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL.csproj"
+            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL.csproj": {
+              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL.csproj"
             },
-            "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {
-              "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj"
+            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {
+              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj"
             },
-            "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer.csproj": {
-              "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer.csproj"
+            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer.csproj": {
+              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer.csproj"
             },
-            "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj": {
-              "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj"
+            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj": {
+              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj"
             }
           }
         }

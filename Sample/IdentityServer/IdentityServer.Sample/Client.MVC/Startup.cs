@@ -20,7 +20,8 @@ namespace Client.MVC
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        private readonly string identityServerUrl = "https://localhost:44364";
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();

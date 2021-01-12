@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {}
+    "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {}
   },
   "projects": {
-    "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {
+    "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {
       "version": "2.0.0-beta1",
       "restore": {
-        "projectUniqueName": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj",
+        "projectUniqueName": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj",
         "projectName": "IdentityServer4.Admin.Admin.EntityFramework.Shared",
-        "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj",
+        "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj",
         "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
-        "outputPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\obj\\",
+        "outputPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",

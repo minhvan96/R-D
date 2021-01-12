@@ -22,8 +22,8 @@ namespace VnR.IdentityServer
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //    options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -42,20 +42,18 @@ namespace VnR.IdentityServer
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseSuccessEvents = true;
             })
-                .AddInMemoryIdentityResources(Configa.GetIdentityResources())
-                .AddInMemoryApiResources(Configa.GetApiResources())
-                .AddInMemoryApiScopes(Configa.GetApiScopes())
-                .AddInMemoryClients(Configa.GetClients())
-                .AddAspNetIdentity<ApplicationUser>()
-                .AddProfileService<IdentityWithAdditionalClaimsProfileService>();
+                .AddInMemoryIdentityResources(Config.IdentityResourceConfig.IdentityResources)
+                .AddInMemoryApiResources(Config.ApiResourceConfig.ApiResources)
+                .AddInMemoryApiScopes(Config.ApiScopeConfig.ApiScopes)
+                .AddInMemoryClients(Config.ClientConfig.Clients);
 
-            services.AddAuthentication()
-              .AddGoogle("Google", options =>
-              {
-                  options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                  options.ClientId = "782231625152-lpjmieqqss3lbsg4gqfh16ks3j5r7osp.apps.googleusercontent.com";
-                  options.ClientSecret = "fBxHTyHUk3yjbPmhaQkbRKaO";
-              });
+            //services.AddAuthentication()
+            //  .AddGoogle("Google", options =>
+            //  {
+            //      options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+            //      options.ClientId = "782231625152-lpjmieqqss3lbsg4gqfh16ks3j5r7osp.apps.googleusercontent.com";
+            //      options.ClientSecret = "fBxHTyHUk3yjbPmhaQkbRKaO";
+            //  });
 
             builder.AddDeveloperSigningCredential();
 

@@ -7196,11 +7196,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer\\IdentityServer.csproj",
+      "projectUniqueName": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer\\IdentityServer.csproj",
       "projectName": "IdentityServer",
-      "projectPath": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer\\IdentityServer.csproj",
+      "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer\\IdentityServer.csproj",
       "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
-      "outputPath": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer\\obj\\",
+      "outputPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",

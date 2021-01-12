@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj": {}
+    "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj": {}
   },
   "projects": {
-    "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj": {
+    "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj": {
       "version": "2.0.0-beta1",
       "restore": {
-        "projectUniqueName": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj",
+        "projectUniqueName": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj",
         "projectName": "IdentityServer4.Admin.Shared",
-        "projectPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj",
+        "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj",
         "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
-        "outputPath": "E:\\R&D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\obj\\",
+        "outputPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",

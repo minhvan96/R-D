@@ -3139,11 +3139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj",
+      "projectUniqueName": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj",
       "projectName": "Client.LDap",
-      "projectPath": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj",
+      "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj",
       "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
-      "outputPath": "E:\\R&D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\obj\\",
+      "outputPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",

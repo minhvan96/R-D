@@ -11,11 +11,11 @@ namespace VnR.IdentityServer.Config
                 // MVC client using hybrid flow
                 new Client
                 {
-                    ClientId = "vnr_client_mvc_hybrid_client",
-                    ClientName = "MVC Hybrid Client",
+                    ClientId = "vnr_hybrid_client",
+                    ClientName = "VrR Hybrid Client",
 
                     AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
-                    ClientSecrets = { new Secret("vnr_client_mvc_hybrid_client_secret".Sha256()) },
+                    ClientSecrets = { new Secret("vnr_hybrid_client_secret".Sha256()) },
                     RequirePkce = false,
                     RedirectUris = { "https://localhost:44381/signin-oidc" },
                     FrontChannelLogoutUri = "https://localhost:44381/signout-oidc",
@@ -23,7 +23,7 @@ namespace VnR.IdentityServer.Config
 
                     AllowOfflineAccess = true,
                     //AlwaysIncludeUserClaimsInIdToken = true,
-                    AllowedScopes = { "openid", "profile", "offline_access", "vrn_client_mvc_hybrid_scope" }
+                    AllowedScopes = { "openid", "profile", "offline_access" }
                 }
             };
     }

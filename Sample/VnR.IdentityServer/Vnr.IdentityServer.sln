@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VnR.IdentityServer", "VnR.I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VnR.IdentityServerAuthorizationService", "VnR.IdentityServerAuthorizationService\VnR.IdentityServerAuthorizationService.csproj", "{DABCCB7E-321F-40D6-9E96-160FA6415329}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VnR.HybridClient", "VnR.HybridClient\VnR.HybridClient.csproj", "{DDE0C9C2-27DE-4098-BD7C-4B3801D11901}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DABCCB7E-321F-40D6-9E96-160FA6415329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DABCCB7E-321F-40D6-9E96-160FA6415329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DABCCB7E-321F-40D6-9E96-160FA6415329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE0C9C2-27DE-4098-BD7C-4B3801D11901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE0C9C2-27DE-4098-BD7C-4B3801D11901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE0C9C2-27DE-4098-BD7C-4B3801D11901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE0C9C2-27DE-4098-BD7C-4B3801D11901}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
