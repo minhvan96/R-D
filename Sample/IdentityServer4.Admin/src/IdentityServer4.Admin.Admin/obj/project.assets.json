@@ -12516,11 +12516,11 @@
   "project": {
     "version": "2.0.0-beta1",
     "restore": {
-      "projectUniqueName": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin\\IdentityServer4.Admin.Admin.csproj",
+      "projectUniqueName": "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin\\IdentityServer4.Admin.Admin.csproj",
       "projectName": "IdentityServer4.Admin.Admin",
-      "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin\\IdentityServer4.Admin.Admin.csproj",
+      "projectPath": "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin\\IdentityServer4.Admin.Admin.csproj",
       "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
-      "outputPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin\\obj\\",
+      "outputPath": "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12537,20 +12537,20 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj": {
-              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj"
+            "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj": {
+              "projectPath": "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.MySql\\IdentityServer4.Admin.Admin.EntityFramework.MySql.csproj"
             },
-            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL.csproj": {
-              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL.csproj"
+            "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL.csproj": {
+              "projectPath": "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL\\IdentityServer4.Admin.Admin.EntityFramework.PostgreSQL.csproj"
             },
-            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {
-              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj"
+            "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj": {
+              "projectPath": "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.Shared\\IdentityServer4.Admin.Admin.EntityFramework.Shared.csproj"
             },
-            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer.csproj": {
-              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer.csproj"
+            "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer.csproj": {
+              "projectPath": "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer\\IdentityServer4.Admin.Admin.EntityFramework.SqlServer.csproj"
             },
-            "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj": {
-              "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj"
+            "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj": {
+              "projectPath": "E:\\R-D\\Sample\\IdentityServer4.Admin\\src\\IdentityServer4.Admin.Shared\\IdentityServer4.Admin.Shared.csproj"
             }
           }
         }
@@ -12714,7 +12714,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

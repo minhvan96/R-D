@@ -13,8 +13,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_identityserver4.admin.admin$
     volumes:
-      - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.Admin:/app
-      - E:\NewR&D\R-D\Sample\IdentityServer4.Admin:/src
+      - E:\R-D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.Admin:/app
+      - E:\R-D\Sample\IdentityServer4.Admin:/src
       - C:\Users\van.nguyenminh\vsdbg\vs2017u5:/remote_debugger:rw
 #$nuget_volume_mapping_identityserver4.admin.admin$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
@@ -39,8 +39,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_identityserver4.admin.admin.api$
     volumes:
-      - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.Admin.Api:/app
-      - E:\NewR&D\R-D\Sample\IdentityServer4.Admin:/src
+      - E:\R-D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.Admin.Api:/app
+      - E:\R-D\Sample\IdentityServer4.Admin:/src
       - C:\Users\van.nguyenminh\vsdbg\vs2017u5:/remote_debugger:rw
 #$nuget_volume_mapping_identityserver4.admin.admin.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
@@ -66,8 +66,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_identityserver4.admin.sts.identity$
     volumes:
-      - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.STS.Identity:/app
-      - E:\NewR&D\R-D\Sample\IdentityServer4.Admin:/src
+      - E:\R-D\Sample\IdentityServer4.Admin\src\IdentityServer4.Admin.STS.Identity:/app
+      - E:\R-D\Sample\IdentityServer4.Admin:/src
       - C:\Users\van.nguyenminh\vsdbg\vs2017u5:/remote_debugger:rw
 #$nuget_volume_mapping_identityserver4.admin.sts.identity$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

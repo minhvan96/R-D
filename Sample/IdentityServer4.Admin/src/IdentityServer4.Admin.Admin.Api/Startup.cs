@@ -39,6 +39,8 @@ namespace IdentityServer4.Admin.Admin.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpContextAccessor();
+
             var adminApiConfiguration = Configuration.GetSection(nameof(AdminApiConfiguration)).Get<AdminApiConfiguration>();
             services.AddSingleton(adminApiConfiguration);
 
@@ -163,9 +165,3 @@ namespace IdentityServer4.Admin.Admin.Api
         }
     }
 }
-
-
-
-
-
-

@@ -39,11 +39,11 @@ namespace IdentityServer
                 .AddEntityFrameworkStores<ApplicationIdentityDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.Configure<IISOptions>(iis =>
-            {
-                iis.AuthenticationDisplayName = "Windows";
-                iis.AutomaticAuthentication = true;
-            });
+            //services.Configure<IISOptions>(iis =>
+            //{
+            //    iis.AuthenticationDisplayName = "Windows";
+            //    iis.AutomaticAuthentication = true;
+            //});
 
             //InMemory
             var builder = services.AddIdentityServer()
@@ -51,7 +51,7 @@ namespace IdentityServer
                 .AddInMemoryIdentityResources(IdentityResourceConfig.IdentityResources)
                 .AddInMemoryApiScopes(ApiScopeConfig.ApiScopes)
                 .AddInMemoryClients(ClientConfig.Clients)
-                //.AddLdapUsers<OpenLdapAppUser>(Configuration.GetSection("IdentityServerLdap"), UserStore.InMemory)
+                //.AddLdapUsers<ActiveDirectoryAppUser>(Configuration.GetSection("IdentityServerLdap"), UserStore.InMemory)
                 .AddTestUsers(TestUsers.Users);
 
             #region Use later

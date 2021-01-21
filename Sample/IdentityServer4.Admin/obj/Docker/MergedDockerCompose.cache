@@ -19,7 +19,7 @@ services:
     - dbdata:/var/opt/mssql:rw
   identityserver4.admin.admin:
     build:
-      context: E:\NewR&D\R-D\Sample\IdentityServer4.Admin
+      context: E:\R-D\Sample\IdentityServer4.Admin
       dockerfile: src/IdentityServer4.Admin.Admin/Dockerfile
     command: dotnet IdentityServer4.Admin.Admin.dll /seed
     container_name: skoruba-identityserver4-admin
@@ -60,14 +60,14 @@ services:
     networks:
       identityserverui: {}
     volumes:
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\identitydata.json:/app/identitydata.json:rw
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\identityserverdata.json:/app/identityserverdata.json:rw
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\serilog.json:/app/serilog.json:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\identitydata.json:/app/identitydata.json:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\identityserverdata.json:/app/identityserverdata.json:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\serilog.json:/app/serilog.json:rw
     - C:\Users\van.nguyenminh\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\nginx\certs\cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\nginx\certs\cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt:rw
   identityserver4.admin.admin.api:
     build:
-      context: E:\NewR&D\R-D\Sample\IdentityServer4.Admin
+      context: E:\R-D\Sample\IdentityServer4.Admin
       dockerfile: src/IdentityServer4.Admin.Admin.Api/Dockerfile
     container_name: skoruba-identityserver4-admin-api
     environment:
@@ -93,12 +93,12 @@ services:
     networks:
       identityserverui: {}
     volumes:
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\serilog.json:/app/serilog.json:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\serilog.json:/app/serilog.json:rw
     - C:\Users\van.nguyenminh\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\nginx\certs\cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\nginx\certs\cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt:rw
   identityserver4.admin.sts.identity:
     build:
-      context: E:\NewR&D\R-D\Sample\IdentityServer4.Admin
+      context: E:\R-D\Sample\IdentityServer4.Admin
       dockerfile: src/IdentityServer4.Admin.STS.Identity/Dockerfile
     container_name: skoruba-identityserver4-sts-identity
     depends_on:
@@ -125,9 +125,9 @@ services:
         aliases:
         - sts.skoruba.local
     volumes:
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\serilog.json:/app/serilog.json:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\serilog.json:/app/serilog.json:rw
     - C:\Users\van.nguyenminh\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\nginx\certs\cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\nginx\certs\cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt:rw
   nginx-proxy:
     container_name: nginx
     image: jwilder/nginx-proxy
@@ -145,8 +145,8 @@ services:
       target: 443
     restart: always
     volumes:
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\nginx\certs:/etc/nginx/certs:ro
-    - E:\NewR&D\R-D\Sample\IdentityServer4.Admin\shared\nginx\vhost.d:/etc/nginx/vhost.d:rw
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\nginx\certs:/etc/nginx/certs:ro
+    - E:\R-D\Sample\IdentityServer4.Admin\shared\nginx\vhost.d:/etc/nginx/vhost.d:rw
     - /var/run/docker.sock:/tmp/docker.sock:ro
 version: '3.4'
 volumes:

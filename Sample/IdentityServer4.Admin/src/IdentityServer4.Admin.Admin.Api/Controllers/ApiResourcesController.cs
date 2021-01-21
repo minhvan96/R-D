@@ -9,6 +9,7 @@ using IdentityServer4.Admin.Admin.Api.Mappers;
 using IdentityServer4.Admin.Admin.Api.Resources;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Dtos.Configuration;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Services.Interfaces;
+using Microsoft.AspNetCore.Http;
 
 namespace IdentityServer4.Admin.Admin.Api.Controllers
 {
@@ -21,16 +22,20 @@ namespace IdentityServer4.Admin.Admin.Api.Controllers
     {
         private readonly IApiResourceService _apiResourceService;
         private readonly IApiErrorResources _errorResources;
+        private readonly IHttpContextAccessor _accessor;
 
-        public ApiResourcesController(IApiResourceService apiResourceService, IApiErrorResources errorResources)
+        public ApiResourcesController(IApiResourceService apiResourceService, IApiErrorResources errorResources, IHttpContextAccessor accessor)
         {
             _apiResourceService = apiResourceService;
             _errorResources = errorResources;
+            _accessor = accessor;
         }
 
         [HttpGet]
         public async Task<ActionResult<ApiResourcesApiDto>> Get(string searchText, int page = 1, int pageSize = 10)
         {
+            var test = _accessor.HttpContext.User.Identity;
+
             var apiResourcesDto = await _apiResourceService.GetApiResourcesAsync(searchText, page, pageSize);
             var apiResourcesApiDto = apiResourcesDto.ToApiResourceApiModel<ApiResourcesApiDto>();
 
@@ -49,7 +54,7 @@ namespace IdentityServer4.Admin.Admin.Api.Controllers
         [HttpPost]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public async Task<IActionResult> Post([FromBody]ApiResourceApiDto apiResourceApi)
+        public async Task<IActionResult> Post([FromBody] ApiResourceApiDto apiResourceApi)
         {
             var apiResourceDto = apiResourceApi.ToApiResourceApiModel<ApiResourceDto>();
 
@@ -65,7 +70,7 @@ namespace IdentityServer4.Admin.Admin.Api.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Put([FromBody]ApiResourceApiDto apiResourceApi)
+        public async Task<IActionResult> Put([FromBody] ApiResourceApiDto apiResourceApi)
         {
             var apiResourceDto = apiResourceApi.ToApiResourceApiModel<ApiResourceDto>();
 
@@ -85,7 +90,7 @@ namespace IdentityServer4.Admin.Admin.Api.Controllers
 
             return Ok();
         }
-        
+
         [HttpGet("{id}/Secrets")]
         public async Task<ActionResult<ApiSecretsApiDto>> GetSecrets(int id, int page = 1, int pageSize = 10)
         {
@@ -107,7 +112,7 @@ namespace IdentityServer4.Admin.Admin.Api.Controllers
         [HttpPost("{id}/Secrets")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public async Task<IActionResult> PostSecret(int id, [FromBody]ApiSecretApiDto clientSecretApi)
+        public async Task<IActionResult> PostSecret(int id, [FromBody] ApiSecretApiDto clientSecretApi)
         {
             var secretsDto = clientSecretApi.ToApiResourceApiModel<ApiSecretsDto>();
             secretsDto.ApiResourceId = id;
@@ -155,7 +160,7 @@ namespace IdentityServer4.Admin.Admin.Api.Controllers
         [HttpPost("{id}/Properties")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public async Task<IActionResult> PostProperty(int id, [FromBody]ApiResourcePropertyApiDto apiPropertyApi)
+        public async Task<IActionResult> PostProperty(int id, [FromBody] ApiResourcePropertyApiDto apiPropertyApi)
         {
             var apiResourcePropertiesDto = apiPropertyApi.ToApiResourceApiModel<ApiResourcePropertiesDto>();
             apiResourcePropertiesDto.ApiResourceId = id;
@@ -183,8 +188,3 @@ namespace IdentityServer4.Admin.Admin.Api.Controllers
         }
     }
 }
-
-
-
-
-

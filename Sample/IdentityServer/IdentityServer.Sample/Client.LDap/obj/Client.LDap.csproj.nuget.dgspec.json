@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj": {}
+    "E:\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj": {}
   },
   "projects": {
-    "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj": {
+    "E:\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj",
+        "projectUniqueName": "E:\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj",
         "projectName": "Client.LDap",
-        "projectPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj",
+        "projectPath": "E:\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\Client.LDap.csproj",
         "packagesPath": "C:\\Users\\van.nguyenminh\\.nuget\\packages\\",
-        "outputPath": "E:\\NewR&D\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\obj\\",
+        "outputPath": "E:\\R-D\\Sample\\IdentityServer\\IdentityServer.Sample\\Client.LDap\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\van.nguyenminh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
