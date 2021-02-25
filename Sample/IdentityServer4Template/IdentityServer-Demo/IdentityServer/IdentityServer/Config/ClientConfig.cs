@@ -23,7 +23,7 @@ namespace IdentityServer.Config
                     },
 
                     // scopes that client has access to
-                    AllowedScopes = { "ApiOne" }
+                    AllowedScopes = { "api1" }
                 },
                 new Client
                 {

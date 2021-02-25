@@ -1,4 +1,5 @@
 using IdentityServer.Quickstart.UI;
+using IdentityServer4;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +19,14 @@ namespace IdentityServer
                 .AddInMemoryApiScopes(Config.ApiScopeConfig.ApiScopes)
                 .AddInMemoryClients(Config.ClientConfig.Clients)
                 .AddTestUsers(TestUsers.Users);
+            services.AddAuthentication()
+            .AddGoogle("Google", options =>
+            {
+                options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                options.ClientId = "782231625152-lpjmieqqss3lbsg4gqfh16ks3j5r7osp.apps.googleusercontent.com";
+                options.ClientSecret = "ncsM_3fCY-lqcB9ZAPws6QUj";
+            });
 
             builder.AddDeveloperSigningCredential();
         }

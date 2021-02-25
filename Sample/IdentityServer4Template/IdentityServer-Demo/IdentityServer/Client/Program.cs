@@ -25,8 +25,8 @@ namespace Client
             var tokenResponse = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = disco.TokenEndpoint,
-                ClientId = "client",
-                ClientSecret = "secret",
+                ClientId = "client_console",
+                ClientSecret = "client_console_secret",
 
                 Scope = "api1"
             });
